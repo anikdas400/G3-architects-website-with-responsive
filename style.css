@@ -204,12 +204,14 @@ font-weight: 700;
     font-weight: 400;
 }
 /* card-section */
+
 .card-section{
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin-bottom: 30px;
     padding: 50px;
+    background: #FFF;
 }
 .card{
     
@@ -227,6 +229,13 @@ font-weight: 700;
     color: #727272;
     font-size: 20px;
     font-weight: 600;
+}
+.img-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    background: #fff;
 }
 
 
@@ -278,6 +287,10 @@ font-weight: 700;
         flex-direction: column;
         gap: 10px;
     }
+    .img-section{
+        flex-direction: column;
+        gap: 20px;
+    }
     
 
 
@@ -315,6 +328,11 @@ font-weight: 700;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         gap: 10px;
+    }
+    .img-section{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
     }
     
 }
