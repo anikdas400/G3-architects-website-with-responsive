@@ -120,6 +120,71 @@ font-weight: 700;
     font-weight: 400;
     margin-bottom: 20px;
 }
+/* feature-2 css */
+.feature-2{
+    display: flex;
+    gap: 6rem;
+    margin-top: 130px;
+}
+
+.feature2-title h3{
+    color: #131313;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border-left: 4px solid #FF900E;
+    padding-left: 15px;
+}
+.feature2-title p{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.feature2-img{
+    position: relative;
+}
+
+.badge{
+    position: absolute;
+    left: -60px;
+    bottom: -50px;
+    background: #FF900E;
+    width: 320px;
+    padding: 30px;
+    border-radius: 10px;
+    border: none;
+    
+}
+.badge h2{
+    color: #FFF;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.badge p{
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+
+
+.feature2-blog{
+    background: #fff;
+    box-shadow: 4px 4px 10px rgba(114, 114, 114,.5);
+    margin-bottom: 30px;
+    padding: 15px;
+    border-radius: 8px;
+}
+.feature2-blog h2{
+    color: #131313;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
 
 
 
@@ -155,6 +220,16 @@ font-weight: 700;
     .feature-img{
         grid-template-columns: 1fr;
     }
+    .feature-2{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .badge{
+        position: static;
+    }
+    .feature2-img img{
+        width: 100%;
+    }
 
 
 }
@@ -176,6 +251,16 @@ font-weight: 700;
     }
     .feature-img{
         grid-template-columns: 1fr;
+    }
+    .feature-2{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .badge{
+        position: static;
+    }
+    .feature2-img img{
+        width: 100%;
     }
     
 }
