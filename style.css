@@ -1,4 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* share css */
+.gray{
+    color: #727272;
+}
+.btn-primary{
+    padding: 20px 25px;
+    color: #fff;
+    background: #FF900E;
+    border: 0;
+    font-size: 1.25rem;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
 body{
+    
     
 font-family: 'Work Sans';
 }
+header{
+    background: rgba(255, 144, 14, 0.10);
+    padding: 40px 240px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h3{
+    color: #131313;
+text-align: center;
+font-size: 2.6rem;
+font-weight: 700;
+
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+nav li{
+    margin-left: 1.5rem;
+}
+nav li a{
+    color: #424242;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+.title-section{
+    padding: 20px 240px;
+    text-align: center;
+    margin-top: 50px;
+}
+.title-section h2{
+    color: #131313;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+.title-section p{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.banner-img{
+    width: 100%;
+}
+
+
+
+
+
+
+/* Responsive css */
+
+/* mobile device */
+@media screen and (max-width:576px) {
+    header{
+        padding: 20px 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    nav h3{
+        margin-bottom: 15px;
+    }
+    nav ul{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        list-style: none;
+        gap: 15px;
+    }
+    .title-section{
+        padding: 20px 20px;
+    }
+
+}
+/* tablate divice */
+
+@media screen and (min-width:576px) and (max-width:992px) {
+    header{
+        padding: 20px 20px;
+    }
+    nav{
+        flex-direction: column;
+    }
+    .title-section{
+        padding: 20px 20px;
+    }
+}
+/* computer divice */
+@media screen and (min-width:992px) and (max-width:1400px) {
+    header{
+        padding: 20px 180px;
+    }
+    .title-section{
+        padding: 20px 20px;
+    }
+}
+
